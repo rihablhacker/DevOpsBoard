@@ -1,0 +1,154 @@
+.layout {
+  padding: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #c7c7c7;
+}
+
+button {
+  cursor: pointer;
+  background: #f1f5ff;
+}
+
+button.active {
+  background: #d6e4ff;
+  border-color: #98b2ff;
+}
+
+button.danger {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.list li {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.task-form {
+  margin-bottom: 1rem;
+}
+
+.progress {
+  margin-bottom: 1rem;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.bar > div {
+  background: #16a34a;
+  height: 100%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.column {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.task {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.login-card {
+  max-width: 450px;
+  margin: 80px auto;
+}
+
+.user-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.user-box span {
+  background: #e8eefc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.demo {
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 1000px) {
+  .cards,
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
